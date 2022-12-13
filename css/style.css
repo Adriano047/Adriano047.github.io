@@ -1,0 +1,186 @@
+* {
+    color: white;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+/* -------------------Seta de retorno para o inicio da pagina--------- */
+.Inicio {
+    position: fixed;
+    bottom: 30px;
+    right: 4%;
+    
+}
+/* -----------------Menu------------------*/ 
+
+body{
+    background-color: rgb(179, 35, 71);
+}
+.menu {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: larger;
+    background-color: rgb(46, 46, 46);
+    padding: 40px;
+    max-width: 100%;
+    display: flex;
+}
+.flex {
+	justify-content: space-evenly;
+}
+.item:hover{
+    font-size: 20px;
+    font-family: monospace;
+}
+/* -----------------------------------------*
+
+/* -------------------------Corpo-------------*/
+/* ---------<div class=" Body Sobre">--------- */
+.Sobre {
+    margin-top: 3%;
+    margin-left: 4%;
+    margin-bottom: 3%;
+    width: 80%;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Sobre-flex {
+    display: flex;
+}
+.Sobre h1 {
+    margin-bottom: 2%;
+}
+.Sobre-imagem {
+    width: 250px;
+}
+@Media (max-width: 1030px) {
+    .Sobre-imagem {
+        width: 300px;
+    }
+}
+@Media (max-width: 950px) {
+    .Sobre-imagem {
+        display: none;
+    }
+    .Sobre-flex p {
+        font-size: medium;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+}
+@Media (max-width: 620px) {
+    .Sobre-flex p {
+        font-size: small;
+    }
+}
+/* -----------------------------------------*/
+
+/*--------<div class=" Body Projetos">-------*/
+.Projetos {
+    background-color:  rgb(179, 61, 90);
+    text-align: center;
+    padding: 25px;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Projeto-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.Projetos-itens {
+    background-color: rgb(179, 35, 71);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10%;
+
+}
+.Projetos-itens:hover {
+    box-shadow: 1px 0px 15px 1px black;
+}
+
+.texto {
+    margin-top: 10px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.oculto{
+    display: none;
+}
+/* ---------------------------------------------- */
+
+/* --------<div class=" Body Conhecimentos">------ */
+.Conhecimentos{
+    background-color: rgb(179, 35, 71);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 25px;
+}
+.Conhecimentos-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* -------------------- Icones e texto --------------*/
+.Conhecimentos-itens {
+    background-color:  rgb(230, 255, 255);
+    padding: 1.3%;
+    margin: 20px;
+    border-radius: 10%;
+}
+.Conhecimentos-texto {
+    padding: 35px;
+    padding-left: 8%;
+}
+.Conhecimentos-texto p {
+    font-size: larger;
+    
+}
+/* --------------------reponsividade do texto-----------*/
+@media (max-width: 1240px) {
+    .Conhecimentos-texto .linguagem {
+        font-size: large;
+    }
+}
+@media (max-width: 1195px) {
+    .Conhecimentos-texto .linguagem {
+        font-size: medium;
+    }
+}
+@media (max-width: 1115px) {
+    .Conhecimentos-texto .linguagem {
+        font-size: small;
+    }
+}
+@media (max-width: 996px) {
+    .Conhecimentos-texto{
+        padding-left: 0px;
+    }
+}
+@media (max-width: 913px) {
+    .Conhecimentos-flex{
+        display:inline-block;
+    }
+    .Conhecimentos-itens{
+        display:contents;
+    }
+}
+/*-----------------efeito hover do icone em relação ao seu texto---------*/
+.Conhecimentos-itens:hover ~ .Conhecimentos-texto p {
+    display: none;
+}
+.Conhecimentos-texto .linguagem{
+    display: none;
+}
+.Conhecimentos-texto .css3{
+    display: none;
+}
+.html5:hover ~ .Conhecimentos-texto .html5 {
+    display: block;
+}
+.css3:hover ~ .Conhecimentos-texto .css3{
+    display: block;
+}.js:hover ~ .Conhecimentos-texto .js {
+    display: block;
+}
+
+
+
+
+
