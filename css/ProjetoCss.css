@@ -1,0 +1,43 @@
+/* Configurações gerais */
+*{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+/* Configuração das imagens */
+.pag1, .pag2, .pag3 {
+    position: relative;
+    opacity: 0.80;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.pag1 {
+    background-image: url(/imgs/cidade.jpg);
+}
+.pag2 {
+    background-image: url(/imgs/floresta.jpg);
+}
+.pag3 {
+    background-image: url(/imgs/passaros.jpg);
+}
+/* titulos sobre as imagens */
+.text1 {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Lucida Sans Regular';
+    height: 50px;
+}
+/* os paragragros */
+.text2 {
+    height: auto;
+    background-color: #f4f4f4;
+    padding: 60px;
+    text-align: center;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
