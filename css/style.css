@@ -126,57 +126,61 @@ body{
 }
 .Conhecimentos-texto {
     padding: 35px;
-    padding-left: 8%;
 }
 .Conhecimentos-texto p {
-    font-size: larger;
-    
+    font-size: large;
+}
+.Conhecimentos-texto .linguagem {
+    font-size: medium;
 }
 /* --------------------reponsividade do texto-----------*/
-@media (max-width: 1240px) {
-    .Conhecimentos-texto .linguagem {
-        font-size: large;
+@media (max-width: 1194px) {
+    .Conhecimentos-texto {
+            padding-left: 0px;
     }
 }
-@media (max-width: 1195px) {
+@media (max-width: 1155px) {
+    .Conhecimentos-texto .linguagem{
+            font-size: small;
+    }
+}
+@media (max-width: 1046px) {
+    .Conhecimentos-flex {
+        display: inline-block;
+    }
+    .Conhecimentos-itens {
+        display: contents;
+        background-color: transparent;
+    }
+    .Conhecimentos-texto .linguagem{
+        font-size: medium;
+        margin-bottom: 100px;
+}
+}
+@media (max-width: 670px) {
     .Conhecimentos-texto .linguagem {
         font-size: medium;
+        padding-top: 30px;
     }
 }
-@media (max-width: 1115px) {
-    .Conhecimentos-texto .linguagem {
-        font-size: small;
-    }
-}
-@media (max-width: 996px) {
-    .Conhecimentos-texto{
-        padding-left: 0px;
-    }
-}
-@media (max-width: 913px) {
-    .Conhecimentos-flex{
-        display:inline-block;
-    }
-    .Conhecimentos-itens{
-        display:contents;
-    }
-}
+
+
 /*-----------------efeito hover do icone em relação ao seu texto---------*/
 .Conhecimentos-itens:hover ~ .Conhecimentos-texto p {
     display: none;
 }
 .Conhecimentos-texto .linguagem{
     display: none;
-}
-.Conhecimentos-texto .css3{
-    display: none;
-}
+} 
 .html5:hover ~ .Conhecimentos-texto .html5 {
     display: block;
 }
 .css3:hover ~ .Conhecimentos-texto .css3{
     display: block;
 }.js:hover ~ .Conhecimentos-texto .js {
+    display: block;
+}
+.react:hover ~ .Conhecimentos-texto .react {
     display: block;
 }
 
