@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <script defer src="/js/script.js"></script>
     <title>Portfolio</title>
 </head>
@@ -26,21 +27,35 @@
         <!-- <a href="https://storyset.com/communication">Communication illustrations by Storyset</a> -->
     </div> </div>
     
-    <div class="Body Projetos"><a name="Projetos"></a> <h1> Projetos</h1> <div class="Projeto-flex">
-        <div class="Projetos-itens"> <a href=""><img src="/imgs/KindTech.png" width="190px"> <div class="texto"> <h4>KindTech</h4></div> </a> </div> 
-        <div class="Projetos-itens"> <a href=""><img src="/imgs/Animalia.png" width="190px"> <div class="texto"> <h4>Animalia</h4></div> </a> </div>
-        <div class="Projetos-itens"> <a href=""><img src="/imgs/ajuda.png" width="190px"> <div class="texto"> <h4>Em breve</h4></div> </a> </div>
-        <div class="Projetos-itens"> <a href=""><img src="/imgs/ajuda.png" width="190px"> <div class="texto"> <h4>Em breve</h4></div> </a> </div>
-        <div class="Projetos-itens"> <a href=""><img src="/imgs/ajuda.png" width="190px"> <div class="texto"> <h4>Em breve</h4></div> </a> </div>
-        <div class="Projetos-itens"> <a href=""><img src="/imgs/ajuda.png" width="190px"> <div class="texto"> <h4>Em breve</h4></div> </a> </div>
-        <div class="Projetos-itens"> <a href=""><img src="/imgs/ajuda.png" width="190px"> <div class="texto"> <h4>Em breve</h4></div> </a> </div>
-        <div class="Projetos-itens"> <a href=""><img src="/imgs/ajuda.png" width="190px"> <div class="texto"> <h4>Em breve</h4></div> </a> </div>
+    <div class="Body Projetos"><a name="Projetos"></a> <h1> Projetos</h1>
+    <div class="swiper"> 
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="project-img">
+                    <a href="#"> <img class="item-galeria" src="/imgs/KindTech.png" alt="KindTech"> </a> 
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="project-img">
+                    <a href="#"> <img class="item-galeria" src="/imgs/Animalia.png" alt="Animalia"> </a>     
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="project-img">
+                    <a href="#"> <img class="item-galeria" src="/imgs/ajudaEditado.png" alt="breve" height="600px"> </a>      
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
         <!-- <a href="https://storyset.com"> illustrations by Storyset</a> -->
         <!-- <a href="https://www.canva.com"> illustrations by canva</a> -->
-    </div></div>
+    <!-- </div> --> </div>
     
     <div class=" Body Conhecimentos"><a name="Conhecimentos"></a> <h1> Conhecimentos</h1> <div class="Conhecimentos-flex">
-        <div class="Conhecimentos-itens html5"> <img src="/imgs/html5.png"> </div> 
+        <div class="Conhecimentos-itens html5"> <a href="/html/projetoHtml.html"> <img src="/imgs/html5.png"></a>  </div> 
         <div class="Conhecimentos-itens css3">  <a href="/html/ProjetoCss.html"> <img src="/imgs/css3.png"></a> </div>
         <div class="Conhecimentos-itens js"> <a href="/html/ProjetoJs.html"> <img src="/imgs/javascrpt.png"> </a> </div>
         <div class="Conhecimentos-itens react"> <a href="https://adriano047.github.io/projeto__react/"> <img src="/imgs/React.png"> </a> </div>
@@ -53,5 +68,7 @@
             <p class="linguagem react"> O React é uma biblioteca front-end<br>  JavaScript de código aberto com foco em<br> criar interfaces de usuário em páginas web</p>
         </div>
     </div></div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="/js/index.js"></script>
 </body>
 </html>
