@@ -45,9 +45,16 @@ body{
 }
 .Sobre-flex {
     display: flex;
+    justify-content: space-between;
 }
 .Sobre h1 {
-    margin-bottom: 2%;
+    margin-bottom: 3%;
+    text-align: center;
+}
+.Sobre-Mim{
+    padding: 10px;
+    font-family:'Courier New', Courier, monospace;
+    color: rgb(252, 252, 253);
 }
 .Sobre-imagem {
     width: 250px;
@@ -63,12 +70,17 @@ body{
     }
     .Sobre-flex p {
         font-size: medium;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .Sobre h1 {
+        font-size: 1.5em;
     }
 }
 @Media (max-width: 620px) {
     .Sobre-flex p {
         font-size: small;
+    }
+    .Sobre h1 {
+        font-size: 1.2em;
     }
 }
 /* -----------------------------------------*/
@@ -145,10 +157,14 @@ body{
 @media (max-width: 1046px) {
     .Conhecimentos-flex {
         display: inline-block;
+        height: 125px;
     }
     .Conhecimentos-itens {
         display: contents;
         background-color: transparent;
+    }
+    .Conhecimentos-texto{
+        padding: 0px;
     }
     .Conhecimentos-texto .linguagem{
         font-size: medium;
@@ -158,10 +174,13 @@ body{
 @media (max-width: 670px) {
     .Conhecimentos-texto .linguagem {
         font-size: medium;
-        padding-top: 30px;
     }
 }
-
+@media (max-width: 605px) {
+    .Conhecimentos-texto .linguagem{
+        font-size: 2.5vw;
+    }
+}
 
 /*-----------------efeito hover do icone em relação ao seu texto---------*/
 .Conhecimentos-itens:hover ~ .Conhecimentos-texto p {
