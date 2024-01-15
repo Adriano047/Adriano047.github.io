@@ -6,49 +6,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-WiW5B6pGJ3B6FU3MUqZSBWXePshWaSbP99L9Oa9+q5eH7piFCuFmIgDyLew1tk4ULjSMPaDL8UEmybPXWi0A7g==" crossorigin="anonymous" />
     <script defer src="/js/script.js"></script>
     <title>Portfolio</title>
 </head>
-
 <body>
-<a name="Inicio"></a>
+    <a name="Topo"></a>
 <nav class="menu flex ">   
+    <a class="item" href="#Inicio">Inicio</a>
 	<a class="item" href="#Sobre">Sobre mim</a>
-	<a class="item" href="#Projetos">Projetos</a>
-	<a class="item" href="#Conhecimentos">Conhecimentos</a>
+    <a class="item" href="#Projetos">Projetos</a>
+    <a class="item" href="#Tecnologias">Tecnologias</a>
 </nav>
-    <div class="Inicio"> <a href="#Inicio"><img src="/imgs/seta-cima.png"> </a></div>
+    <div class="SetaDeRetorno"> <a href="#Topo"><img width="100" height="100" src="https://img.icons8.com/plasticine/100/000000/long-arrow-up.png" alt="long-arrow-up"/> </a></div>
+    <a name="Inicio"></a>
+    <div class="Inicio">
+    <div class="Inicio-flex">
+        <p>
+            Bem Vindo, eu sou <br>
+            <span id="textoMaquina">Adriano Cardoso</span><br>
+            Desenvolvedor Front-end 
+        </p>
+    </div>
+    <div class="Button-Flex"> 
+        <button class="link-para-Contato"> 
+        <a href="https://www.github.com/Adriano047" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 496 512">
+                <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" fill="white"/>
+              </svg>
+           <p>Github</p> 
+        </a>
+        </button>    
+
+        <button class="link-para-Contato"> 
+        <a href="https://www.linkedin.com/in/cardosodev047" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 448 512">
+               <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" fill="white"/>
+            </svg>
+            <p>Likedin</p>
+        </a>
+        </button>   
+    </div> 
+    </div>
     <a name="Sobre"></a>
-    <div class=" Body Sobre"> <h1> Sobre mim</h1> <div class="Sobre-flex"> 
-        <div class="dividindo-quatro"> 
-            <p class="Sobre-Mim parte1"> Apaixonado pelo aprendizado sempre me destaquei nas instituições de ensino nas quais
-            frequentei, sempre disposto a auxiliar meus colegas de classe em seu desenvolvimento, </p>
-            <p class="Sobre-Mim parte2">durante o ensino médio tive meu primeiro contato com o xadrez onde desenvolvi habilidades como: raciocínio lógico e estratégico. </p> 
-        </div>
-        <div class="dividindo-quatro">
-            <p class="Sobre-Mim parte3"> Iniciei minha relação com a programação em 2021 através do Python aprendendo a lógica de programação, com isso optei pela área de desenvolvimento web no ramode frontend com o objetivo de me tornar fullstack.</p>
-            <p class="Sobre-Mim parte4"> Atualmente estou cursando na Udemy o curso web moderno com previsão em completar em 2022.</p>
-        </div>
+    <div class="Sobre"> <h1> Sobre mim</h1> <div class="Sobre-flex"> 
+        <span>
+            <p>
+            Apaixonado pelo aprendizado, sempre me destaquei nas instituições de ensino que frequentei. 
+            Sempre estive disposto a auxiliar meus colegas de classe em seu desenvolvimento. 
+            Durante o ensino médio, tive meu primeiro contato com o xadrez, onde desenvolvi habilidades como raciocínio 
+            lógico e estratégico.<br></p>
+            <p>
+            Iniciei minha jornada na programação em 2021, começando com Python e aprendendo a lógica 
+            de programação. Com isso, optei pela área de desenvolvimento web, focando no ramo de frontend, com o objetivo de 
+            me tornar um profissional fullstacks.</p>
+        </span>
         <img class="Sobre-imagem" src="/imgs/Sobre.png">
         <!-- <a href="https://storyset.com/communication">Communication illustrations by Storyset</a> -->
     </div> </div>
-    
-    <div class="Body Projetos"><a name="Projetos"></a> <h1> Projetos</h1>
+    <div class="Body Projetos"><a name="Projetos"> </a> <h1>Projetos</h1>
     <div class="swiper"> 
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="project-img">
-                    <a href="#"> <img class="item-galeria" src="/imgs/KindTech.png" alt="KindTech"> </a> 
+                    <a href="https://adriano047.github.io/JogoDaVelha"> <img class="item-galeria" src="/imgs/jogoDaVelha.jpg" alt="JogoDaVelha"> 
+                        <div class="descricaoProjeto"> 
+                            <div class="estiloProjeto"> 
+                            <h1> Jogo da velha</h1>
+                            <p> 
+                                Implementação do Jogo da Velha, com o algoritmo Minimax integrado para criar uma experiência desafiadora e inteligente. 
+                                Esse algoritmo é uma abordagem de busca em árvore que permite ao computador analisar todas as possíveis jogadas e escolher
+                                a melhor estratégia para maximizar suas chances de vitória ou minimizar suas chances de derrota.
+                                <br><b>Tecnologias: Html, Css, Js</b>
+                            </p> 
+                        </div></div>
+                    </a> 
+                        <!-- Imagem de <a href="https://pixabay.com/pt/users/demonscollector-33043290/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7737546">Osama Greenz</a> por <a href="https://pixabay.com/pt//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7737546">Pixabay</a> -->
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="project-img">
-                    <a href="#"> <img class="item-galeria" src="/imgs/Animalia.png" alt="Animalia"> </a>     
+                    <a href="https://adriano047.github.io/Lista-de-Tarefas"> 
+                        <img class="item-galeria" src="/imgs/ToDoList.jpg" alt="Lista"> 
+                        <div class="descricaoProjeto"> 
+                            <div class="estiloProjeto"> 
+                            <h1> To-Do List</h1>
+                            <p> 
+                                A To-Do List é uma ferramenta que buscam otimizar a organização pessoal e profissional, oferecendo ajuda para o gerenciamento de tarefas.Esta versão possui filtragem por categoria, pesquisa de tarefa e ordenação alfabética/reversa.
+                                <br><b>Tecnologias: Html, Css, Js, Vite</b>
+                            </p> 
+                        </div></div>
+                    </a>   
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="project-img">
-                    <a href="#"> <img class="item-galeria" src="/imgs/ajudaEditado.png" alt="breve" height="600px"> </a>      
+                    <a href="https://adriano047.github.io/FormularioDeCadastro"> 
+                        <img class="item-galeria" src="/imgs/FormularioDeCadastro.jpg" alt="Formulario"> 
+                        <div class="descricaoProjeto"> 
+                            <div class="estiloProjeto"> 
+                            <h1> Formulario De Cadastro</h1>
+                            <p> 
+                                Apresenta uma interface simplificada com quatro campos fundamentais: Nome, E-mail, Senha e Confirmação de Senha. 
+                                Ele inclui validações que asseguram o preenchimento correto de todos os campos e a correspondência entre as informações 
+                                inseridas nos campos 'Senha' e 'Confirmação de Senha' antes do envio.
+                                <br><b>Tecnologias: Html, Css, Js, React.js</b>
+                            </p> 
+                        </div></div>
+                    </a>      
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="project-img">
+                    <a href="https://adriano047.github.io/GaleriaDeImagens"> 
+                        <img class="item-galeria" src="/imgs/Galeria.jpg" alt="GaleriaDeImagens"> 
+                        <div class="descricaoProjeto"> 
+                            <div class="estiloProjeto"> 
+                            <h1> Galeria de Imagens</h1>
+                            <p> 
+                                Interface visual interativa que apresenta uma coleção de fotos organizadas de maneira estética e funcional. Possui um slide em lightbox integrado, que permite a ampliação e visualização de uma imagem em tamanho maior ao clicar nela.
+                                <br><b>Tecnologias: Html, Css, Js, React.js</b>
+                            </p> 
+                        </div></div>
+                        <!-- Foto de 隔壁光头老王 WangMing'Photo: https://www.pexels.com/pt-br/foto/pinturas-variadas-na-parede-verde-354939/ -->
+                    </a>      
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="project-img">
+                    <img src="/imgs/ajudaEditado.png" alt="breve" widt="500px"> 
                 </div>
             </div>
         </div>
@@ -58,22 +144,77 @@
     </div>
         <!-- <a href="https://storyset.com"> illustrations by Storyset</a> -->
         <!-- <a href="https://www.canva.com"> illustrations by canva</a> -->
-    <!-- </div> --> </div>
-    
-    <div class=" Body Conhecimentos"><a name="Conhecimentos"></a> <h1> Conhecimentos</h1> <div class="Conhecimentos-flex">
-        <div class="Conhecimentos-itens html5"> <a href="/html/projetoHtml.html"> <img src="/imgs/html5.png"></a>  </div> 
-        <div class="Conhecimentos-itens css3">  <a href="/html/ProjetoCss.html"> <img src="/imgs/css3.png"></a> </div>
-        <div class="Conhecimentos-itens js"> <a href="/html/ProjetoJs.html"> <img src="/imgs/javascrpt.png"> </a> </div>
-        <div class="Conhecimentos-itens react"> <a href="https://adriano047.github.io/projeto__react/"> <img src="/imgs/React.png"> </a> </div>
-        <div class="Conhecimentos-texto"> 
-            <p> Deslize o mouse sobre os icones </p> 
-            <p class="linguagem html5"> Código que é utilizado para estruturar <br>uma página web e seu conteúdo. <br>Aprendendo sobre html desde Maio de 2022</p>
-            <p class="linguagem css3">  Linguagem de marcação, bastante utilizada com HTML ou<br> XHTML funciona como uma camada de personalização ao conteúdo<br>  visível 
-            Aprendendo desde Junho de 2022</p> 
-            <p class="linguagem js"> Linguagem de programação usada para adicionar interatividade<br> ao um site fazendo mais do que mostrar informações estáticas.<br> Aprendendo sobre javascript desde Março de 2022</p>
-            <p class="linguagem react"> O React é uma biblioteca front-end<br>  JavaScript de código aberto com foco em<br> criar interfaces de usuário em páginas web</p>
+    </div>
+     <div class=" Body Tecnologias"><a name="Tecnologias"></a> <h1> Tecnologias</h1> <div class="Cards-flex">
+        <div class="Card">
+            <div class="Virar-Card">
+                <div class="Frente-Card" id="Estilo-Card">
+                    <img src="/imgs/html5.svg" alt="logoHtml5">
+                </div>
+                <div class="Verso-Card" id="Estilo-Card"> 
+                    <div class="estiloProjeto"> 
+                    <h1> HTML:5</h1> 
+                    <p> 
+                        Código que é utilizado para estruturar uma página web e seu conteúdo.
+                        <br><b>Aprendendo sobre HTML desde Maio de 2022.</b>
+                    </p>
+                    </div>
+                </div>
+                </div>
+        </div>
+        <div class="Card">
+            <div class="Virar-Card">
+                <div class="Frente-Card" id="Estilo-Card">
+                    <img src="/imgs/css3.svg" alt="logoCss3">
+                </div>
+                <div class="Verso-Card" id="Estilo-Card"> 
+                    <div class="estiloProjeto"> 
+                        <h1> CSS:3</h1> 
+                        <p> 
+                            Linguagem de marcação, bastante utilizada em conjunto com HTML ou XHTML, funcionando como uma 
+                            camada de personalização ao conteúdo visível.<br><b>Aprendendo desde Junho de 2022</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Card">
+            <div class="Virar-Card">
+                <div class="Frente-Card" id="Estilo-Card">
+                    <img src="/imgs/javascrpt.svg" alt="logoJs">
+                </div>
+                <div class="Verso-Card" id="Estilo-Card"> 
+                    <div class="estiloProjeto"> 
+                        <h1> JavaScript</h1> 
+                        <p> 
+                            Linguagem de programação projetada para incorporar interatividade em um site, 
+                            permitindo mais do que apenas a exibição de informações estáticas.<br>
+                            <b>Aprendendo sobre javascript desde 
+                            Março de 2022.</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Card">
+            <div class="Virar-Card">
+                <div class="Frente-Card" id="Estilo-Card">
+                    <img src="/imgs/React.svg" alt="logoReact">
+                </div>
+                <div class="Verso-Card" id="Estilo-Card"> 
+                    <div class="estiloProjeto"> 
+                        <h1> React</h1> 
+                        <p> 
+                            O React é uma biblioteca front-end JavaScript de código aberto 
+                            com foco em criar interfaces de usuário em páginas web.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
     </div></div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="/js/index.js"></script>
 </body>

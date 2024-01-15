@@ -3,23 +3,36 @@
     text-decoration: none;
     margin: 0px;
     padding: 0px;
+    font-family: Lato, sans-serif;
 }
+body{
+    background-color: #201b2c;
+}
+h1 {
+    font-family: Open Sans, sans-serif;
+}
+
 /* -------------------Seta de retorno para o inicio da pagina--------- */
-.Inicio {
+.SetaDeRetorno {
     position: fixed;
     bottom: 30px;
     right: 4%;
-    
+    z-index: 100;
+    bottom: 20px;
+    right: 20px; 
+    transform: translateY(0); 
+    transition: transform 1s ease; 
 }
+.SetaDeRetorno:hover  {
+    transform: translateY(-50px)
+}
+
 /* -----------------Menu------------------*/ 
 
-body{
-    background-color: rgb(179, 35, 71);
-}
+
 .menu {
-    font-family:Arial, Helvetica, sans-serif;
     font-size: larger;
-    background-color: rgb(46, 46, 46);
+    background-color: #2f2841;
     padding: 40px;
     max-width: 100%;
     display: flex;
@@ -28,37 +41,98 @@ body{
 	justify-content: space-evenly;
 }
 .item:hover{
+    border-bottom: 2px solid white;
     font-size: 20px;
-    font-family: monospace;
+    
 }
 /* -----------------------------------------*
 
 /* -------------------------Corpo-------------*/
-/* ---------<div class=" Body Sobre">--------- */
-.Sobre {
+/* ---------<div class=" Inicio">--------- */
+.Inicio {
     margin-top: 3%;
     margin-left: 4%;
     margin-bottom: 3%;
-    width: 80%;
+   
+    padding: 10px;
+    
+}
+.Inicio-flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;   
+    height: 150px;
+    font-size: 30px;
+}
+.Button-Flex {
+    display: flex;
+    justify-content: center;
+}
+.Inicio button {
+    margin-left: 10px;
+    background-color: transparent;
+    border: solid 2px white;
+    border-radius: 10px;
+    width: 150px;
+    height: 55px;
+}
+.link-para-Contato a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: Lato, sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.link-para-Contato:hover, .link-para-Contato:hover p, .link-para-Contato:hover path {
+    background-color: white;
+    color: #201b2c;
+    fill: #201b2c;
+
+}
+.link-para-Contato:hover {
+    width: 160px;
+}
+#textoMaquina {
+    border-right: .15em solid white; 
+    white-space: nowrap; 
+    overflow: hidden;
+    animation: maquinaEscrever 2s steps(40, end), blinkCursor .5s step-end infinite alternate;
+}
+@keyframes maquinaEscrever {
+    from { width: 0; }
+    to { width: 100%; }
+}
+@keyframes blinkCursor {
+    from, to { border-color: transparent; }
+    50% { border-color: white; }
+}
+/* ---------<div class="Sobre">--------- */
+.Sobre {
+    background-color:  #261d3b;
     font-size: larger;
-    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    font-family:'Courier New', Courier, monospace;
 }
 .Sobre-flex {
     display: flex;
-    justify-content: space-between;
+    border: solid 10px transparent;
+    border-left-width: 100px;
+    border-right-width: 100px;
 }
 .Sobre h1 {
     margin-bottom: 3%;
     text-align: center;
 }
-.Sobre-Mim{
-    padding: 10px;
-    font-family:'Courier New', Courier, monospace;
-    color: rgb(252, 252, 253);
+.Sobre p {
+     text-indent: 2rem;
 }
 .Sobre-imagem {
     width: 250px;
 }
+
 @Media (max-width: 1030px) {
     .Sobre-imagem {
         width: 300px;
@@ -75,19 +149,11 @@ body{
         font-size: 1.5em;
     }
 }
-@Media (max-width: 620px) {
-    .Sobre-flex p {
-        font-size: small;
-    }
-    .Sobre h1 {
-        font-size: 1.2em;
-    }
-}
+
 /* -----------------------------------------*/
 
 /*--------<div class=" Body Projetos">-------*/
 .Projetos {
-    background-color:  rgb(179, 61, 90);
     text-align: center;
     padding: 25px;
     font-size: larger;
@@ -97,9 +163,55 @@ body{
     align-content: center;
     justify-content: center;
 }
+.project-img {
+     position: relative;
+}
 .item-galeria {
-    width: 100%;
+   margin-top: 10px;
+    width: 500px;
+    height: 400px;
   }
+.descricaoProjeto {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    word-wrap: break-word;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+}
+.descricaoProjeto:hover {
+    opacity: 1;
+}
+.descricaoProjeto h1 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+.descricaoProjeto p {
+    font-family: Lato, sans-serif;
+    font-size: 18px;
+}
+.descricaoProjeto > * {
+    transform: translateY(25px);
+    transition: transform 0.6s;
+}
+.descricaoProjeto:hover > * {
+    transform: translateY(0px);
+}
+.estiloProjeto {
+    border-radius: 10px;
+    border: solid transparent;
+}
+.estiloProjeto b {
+    text-decoration: underline;
+}
 .swiper {
     height: 500px;
   }
@@ -116,92 +228,67 @@ body{
   }
 /* ---------------------------------------------- */
 
-/* --------<div class=" Body Conhecimentos">------ */
-.Conhecimentos{
-    background-color: rgb(179, 35, 71);
+/* --------<div class=" Body Tecnologias">------ */
+.Tecnologias{
+    background-color:  #261d3b;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 25px;
 }
-.Conhecimentos-flex {
+.Cards-flex {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
 }
-/* -------------------- Icones e texto --------------*/
-.Conhecimentos-itens {
-    background-color:  rgb(230, 255, 255);
-    padding: 1.3%;
-    margin: 20px;
-    border-radius: 10%;
+.Card {
+    position: relative;
+    margin-top: 20px;
+    width: 250px;
+    height: 300px;
 }
-.Conhecimentos-texto {
-    padding: 35px;
+.Card:hover .Virar-Card{
+    transform: rotateY(180deg);
 }
-.Conhecimentos-texto p {
-    font-size: large;
+.Virar-Card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 0.5s;
 }
-.Conhecimentos-texto .linguagem {
-    font-size: medium;
+#Estilo-Card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.349);
+    backface-visibility: hidden;
 }
-/* --------------------reponsividade do texto-----------*/
-@media (max-width: 1194px) {
-    .Conhecimentos-texto {
-            padding-left: 0px;
-    }
+.Frente-Card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:whitesmoke;
 }
-@media (max-width: 1155px) {
-    .Conhecimentos-texto .linguagem{
-            font-size: small;
-    }
+.Frente-Card img {
+    width: 200px;
+    height: 200px; 
 }
-@media (max-width: 1046px) {
-    .Conhecimentos-flex {
-        display: inline-block;
-        height: 125px;
-    }
-    .Conhecimentos-itens {
-        display: contents;
-        background-color: transparent;
-    }
-    .Conhecimentos-texto{
-        padding: 0px;
-    }
-    .Conhecimentos-texto .linguagem{
-        font-size: medium;
-        margin-bottom: 100px;
+.Verso-Card {
+    background: #ca4030;
+    transform: rotateY(180deg);
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    word-wrap: break-word;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+.Verso-Card h1 {
+    margin-bottom: 15px;
+    font-size: 25px;
 }
-@media (max-width: 670px) {
-    .Conhecimentos-texto .linguagem {
-        font-size: medium;
-    }
-}
-@media (max-width: 605px) {
-    .Conhecimentos-texto .linguagem{
-        font-size: 2.5vw;
-    }
-}
-
-/*-----------------efeito hover do icone em relação ao seu texto---------*/
-.Conhecimentos-itens:hover ~ .Conhecimentos-texto p {
-    display: none;
-}
-.Conhecimentos-texto .linguagem{
-    display: none;
-} 
-.html5:hover ~ .Conhecimentos-texto .html5 {
-    display: block;
-}
-.css3:hover ~ .Conhecimentos-texto .css3{
-    display: block;
-}.js:hover ~ .Conhecimentos-texto .js {
-    display: block;
-}
-.react:hover ~ .Conhecimentos-texto .react {
-    display: block;
-}
-
-
-
-
-
